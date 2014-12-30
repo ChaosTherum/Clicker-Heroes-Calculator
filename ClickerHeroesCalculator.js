@@ -1390,17 +1390,18 @@ function addEventListeners() { //Everything that requires waiting for user input
         updateValues();
     };
     window.onresize = updateDOM;
-    var heroTabIn = document.getElementById("heroTableIn");
-    for (var i = 0; i < heroTabIn.rows.length; i++) {
-        for (var j = 0; j < heroTabIn.rows[i].cells.length; j++) {
-            heroTabIn.rows[i].cells[j].onclick = (function (i, j) {
-                return function () {
-                    createPopup("Hero", (4 * i) + j);
-                };
-            }(i, j));
-        }
-    }
-    var ancientTabIn = document.getElementById("ancientTableIn");
+    var heroTabIn = document.getElementById("heroTableIn");                         
+    
+   // for (var i = 0; i < heroTabIn.rows.length; i++) {
+      //  for (var j = 0; j < heroTabIn.rows[i].cells.length; j++) {
+       //     heroTabIn.rows[i].cells[j].onclick = (function (i, j) {
+        //        return function () {
+        //            createPopup("Hero", (4 * i) + j);
+         //       };
+        //    }(i, j));
+       // }
+   // }
+    var ancientTabIn = document.getElementById("ancientTableIn");    
     for (var i = 0; i < ancientTabIn.rows.length; i++) {
         for (var j = 0; j < ancientTabIn.rows[i].cells.length; j++) {
             ancientTabIn.rows[i].cells[j].onclick = (function (i, j) {
