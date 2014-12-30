@@ -1350,9 +1350,25 @@ function heroGilds(heroID) {
         }
 }
 
+function heroSpriteInfo(heroID){
+    if (heroData[heroID].level >= 0){
+        $("#" + heroID + " + p").remove()
+        document.getElementById(heroID.toString()).insertAdjacentHTML('afterEnd', '<p id=heroLVL' + heroID + '>Lvl:' + heroData[heroID].level)
+    }
+    if (heroData[heroID].gilded >= 0){
+        $("#heroGild" + heroID).remove()
+        $("#heroLVL" + heroID).after("<p id=heroGild" + heroID + ">Gild:" + heroData[heroID].gilded)
+    }
+    if (heroData[heroID].currentDPS >= 0){
+        $("#heroDPS" + heroID).remove()
+        $("#heroGild" + heroID).after("<p id=heroDPS" + heroID + ">DPS:" + heroData[heroID].currentDPS)
+    }
+}
+
 function updateSprite(){
     for (i in heroData) {
         heroGilds(i);
+        heroSpriteInfo(i);
     }
 }
 
