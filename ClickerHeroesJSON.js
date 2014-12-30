@@ -2676,7 +2676,14 @@ chdata =
             "costFormula": "heroCostFormula1",
             "baseClickDamage": 0,
             "specialSkill": ""
+        },
+        "27": {
+        "baseGoldPerSecond": 0,
+            "specialSkillDescription": "",
+            "name": "Dread Knight",
+            
         }
+    
     },
     "zones": {
         "1": {
