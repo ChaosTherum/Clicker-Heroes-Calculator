@@ -147,11 +147,30 @@ p {
     overflow-y: auto;
 }
 
+#heroTable table {
+    border-collapse: collapse;
+    border-style: hidden;
+    border-right: 1px;
+    width: 100%
+}
+
+#heroTable th, #heroTable td {
+    align-content: center;
+    border: 1px solid black;
+    width: 25%;
+}
+
 #ancientTable table {
     border-collapse: collapse;
     border-style: hidden;
     border-right: 1px;
     width: 100%
+}
+
+#ancientTable th, #ancientTable td {
+    align-content: center;
+    border: 1px solid black;
+    width: 25%;
 }
 
 #ancientTable img {
@@ -182,35 +201,8 @@ p {
     width: 100%
 }
 
-#ancients{
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0;
-    margin: 0;
-    height: 100%
-}
-
-#ancients li{
-    list-style: none;
-    text-align: center;
-    width: 20%;
-    outline: 1px solid black;
-}
-
-#heroTableIn{
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0;
-    margin: 0;
-    height: 100%;
-}
-
-#heroTableIn li{
-    list-style: none;
-    text-align: center;
-    width: 10%;
-    outline: 1px solid black;
-
+#achievTable th, #achievTable td {
+    border: 1px solid black;
 }
 
 #popupdiv {
