@@ -1341,12 +1341,28 @@ function graph() {
     })
 }
 
+function heroGilds(heroID) {
+    if (heroData[heroID].gilded > 0) {
+        document.getElementById(heroID.toString()).src = "heroSprites/heroes/" + heroID + "b.png";
+        }
+    else{
+        document.getElementById(heroID.toString()).src = "heroSprites/heroes/" + heroID + ".png";
+        }
+}
+
+function updateSprite(){
+    for (i in heroData) {
+        heroGilds(i);
+    }
+}
+
 function updateDOM() { //Will put calculated elements onto their respective DOM elements
     updateStats();
     updateEfficiencyTable();
     updateHeroDataOutTable();
     updateAchievementInTable();
     graph();
+    updateSprite();
 }
 
 function addEventListeners() { //Everything that requires waiting for user input goes here
@@ -1394,7 +1410,7 @@ function addEventListeners() { //Everything that requires waiting for user input
             }(i, j));
         }
     }
-}
+}    
 
 function postInit() { //PostInit Phase
     updateDOM();
