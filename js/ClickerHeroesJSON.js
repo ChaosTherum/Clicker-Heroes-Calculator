@@ -2676,6 +2676,22 @@ chdata =
             "costFormula": "heroCostFormula1",
             "baseClickDamage": 0,
             "specialSkill": ""
+        },
+        "27": {
+            "baseGoldPerSecond": 0,
+            "specialSkillDescription": "",
+            "name": "Dread Knight",
+            "assetId": 164,
+            "attackFormula": "heroAttackFormula1",
+            "baseCost": 5.000+39,
+            "id": 27,
+            "clickDamageFormula": "heroClickDamageFormula1",
+            "description": "Abandoned and forgotten, his heart has been tainted black with hatred and vengeance. He wields the power of a black ring which draws its magic from the darkness of his soul.",
+            "goldPerSecondFormula": "heroGoldPerSecondFormula1",
+            "baseAttack": 2.047+37,
+            "costFormula": "heroCostFormula1",
+            "baseClickDamage": 0,
+            "specialSkill": ""
         }
     },
     "zones": {
@@ -7025,6 +7041,22 @@ chdata =
             "displayOrder": 126,
             "upgradeFunction": "upgradeClickDpsPercent",
             "name": "Frigid Enchant",
+            "upgradeParams": "0.5",
+            "amount": 100,
+            "description": "Frostleaf enchants everyone's weapons with icy energy that decreases enemy armor tremendously.",
+            "attribute": 4,
+            "cost": 1.68e+30,
+            "id": 127,
+            "upgradeRequired": 126,
+            "iconId": 49,
+            "heroId": 26,
+            "isPercentage": 0,
+            "heroLevelRequired": 75
+        },
+        "128": {
+            "displayOrder": 127,
+            "upgradeFunction": "upgradeClickDpsPercent",
+            "name": "Lost Soul",
             "upgradeParams": "0.5",
             "amount": 100,
             "description": "Frostleaf enchants everyone's weapons with icy energy that decreases enemy armor tremendously.",
