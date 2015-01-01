@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Clicker Heroes Calculator</title>
-    <link rel="stylesheet" type="text/css" href="css/ClickerHeroesCalculator.min.css">
-    <script type="text/javascript" src="js/ClickerHeroesJSON.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/ClickerHeroesCalculator.css">
+    <script type="text/javascript" src="js/ClickerHeroesJSON.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 
@@ -63,13 +63,12 @@
                 <div id="statsherosoulsmultiplier" style="display:inline-block;">0</div>
                 <br/>
                 Dark Ritual Multiplier:
-                <div id="statsdarkritualmultiplier" style="display:inline-block;">0</div>
-                <br/>
+                <div id="statsdarkritualmultiplier" style="display:inline-block;">0</div><br/>
                 Efficiency Formula:
                 <div id="statsefficiencyType" style="display:inline-block;">1</div>
             </div>
         </div>
-        <---<div id="outdata2">
+        <div id="outdata2">
             <div id="piechartdiv">
                 <div id="piechart" style="width: 100%; height: 100%;"></div>
             </div>
@@ -205,17 +204,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><a><img src="heroSprites/ancients/21.png"
-                                            alt="Hecatoncheir, Ancient of Wallops"></a></td>
+                                <td><a><img src="heroSprites/ancients/21.png" alt="Hecatoncheir, Ancient of Wallops"></a></td>
                                 <td><a><img src="heroSprites/ancients/22.png" alt="Berserker, Ancient of Rage"></a></td>
-                                <td><a><img src="heroSprites/ancients/23.png" alt="Sniperino, Ancient of Accuracy"></a>
-                                </td>
+                                <td><a><img src="heroSprites/ancients/23.png" alt="Sniperino, Ancient of Accuracy"></a></td>
                                 <td><a><img src="heroSprites/ancients/24.png" alt="Kleptos, Ancient of Thieves"></a>
                                 </td>
                             </tr>
                             <tr>
-                                <td><a><img src="heroSprites/ancients/25.png"
-                                            alt="Energon, Ancient of Battery Life"></a></td>
+                                <td><a><img src="heroSprites/ancients/25.png" alt="Energon, Ancient of Battery Life"></a></td>
                                 <td><a><img src="heroSprites/ancients/26.png" alt="Argaiv, Ancient of Enhancement"></a>
                                 </td>
                             </tr>
@@ -255,7 +251,7 @@
 <script type="text/javascript">
     function downloadJSAtOnload() {
         var element = document.createElement("script");
-        element.src = "ClickerHeroesCalculator.js";
+        element.src = "js/ClickerHeroesCalculator.js";
         document.body.appendChild(element);
     }
     if (window.addEventListener) {

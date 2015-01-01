@@ -1371,7 +1371,7 @@ function heroSpriteInfo(heroID){
 function updateSprite(){
     for (i in heroData) {
         heroGilds(i);
-        heroSpriteInfo(i);
+        //heroSpriteInfo(i);
     }
 }
 
