@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>Clicker Heroes Calculator</title>
-    <link rel="stylesheet" type="text/css" href="css/ClickerHeroesCalculator.min.css">
-    <script type="text/javascript" src="js/ClickerHeroesJSON.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/ClickerHeroesCalculator.css">
+    <script type="text/javascript" src="js/ClickerHeroesJSON.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 
@@ -69,7 +70,7 @@
                 <div id="statsefficiencyType" style="display:inline-block;">1</div>
             </div>
         </div>
-        <---<div id="outdata2">
+        <div id="outdata2">
             <div id="piechartdiv">
                 <div id="piechart" style="width: 100%; height: 100%;"></div>
             </div>
@@ -159,7 +160,6 @@
                             <tr>
                                 <td><a><img id="24" src="heroSprites/heroes/24.PNG" alt="Grant, the General"></a></td>
                                 <td><a><img id="25" src="heroSprites/heroes/25.PNG" alt="Frostleaf"></a></td>
-                                <td><a><img id="26" src="heroSprites/heroes/26.png" alt="Dread Knight"></a></td>
                             </tr>
                         </table>
                     </div>
@@ -255,7 +255,7 @@
 <script type="text/javascript">
     function downloadJSAtOnload() {
         var element = document.createElement("script");
-        element.src = "ClickerHeroesCalculator.js";
+        element.src = "js/ClickerHeroesCalculator.js";
         document.body.appendChild(element);
     }
     if (window.addEventListener) {
