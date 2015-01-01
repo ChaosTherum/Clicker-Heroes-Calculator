@@ -1341,13 +1341,38 @@ function graph() {
     })
 }
 
-function heroGuilds(heroID) {
+function heroGilds(heroID) {
     if (heroData[heroID].gilded > 0) {
-        document.getElementById(heroID.toString()).src = "/heroSprites/heroes/" + heroID + "b.png";
+        document.getElementById(heroID.toString()).src = "heroSprites/heroes/" + heroID + "b.png";
         }
     else{
-        document.getElementById(heroID.toString()).src = "/heroSprites/heroes/" + heroID + ".png";
+        document.getElementById(heroID.toString()).src = "heroSprites/heroes/" + heroID + ".png";
         }
+}
+
+function heroSpriteInfo(heroID){
+    // Prints the Heroes level
+    if (heroData[heroID].level >= 0){
+        $("#" + heroID + " + p").remove()
+        document.getElementById(heroID.toString()).insertAdjacentHTML('afterEnd', '<p id=heroLVL' + heroID + '>Lvl:' + formatNumber(heroData[heroID].level))
+    }
+    //Prints Heroes Gild level
+    if (heroData[heroID].gilded >= 0){
+        $("#heroGild" + heroID).remove()
+        $("#heroLVL" + heroID).after("<p id=heroGild" + heroID + ">Gild:" + formatNumber(heroData[heroID].gilded))
+    }
+    // Prints current Hero DPS
+    if (heroData[heroID].currentDPS >= 0){
+        $("#heroDPS" + heroID).remove()
+        $("#heroGild" + heroID).after("<p id=heroDPS" + heroID + ">DPS:" + formatNumber(heroData[heroID].currentDPS))
+    }
+}
+
+function updateSprite(){
+    for (i in heroData) {
+        heroGilds(i);
+        heroSpriteInfo(i);
+    }
 }
 
 function updateDOM() { //Will put calculated elements onto their respective DOM elements
@@ -1356,7 +1381,7 @@ function updateDOM() { //Will put calculated elements onto their respective DOM 
     updateHeroDataOutTable();
     updateAchievementInTable();
     graph();
-    heroGuilds();
+    updateSprite();
 }
 
 function addEventListeners() { //Everything that requires waiting for user input goes here
@@ -1404,7 +1429,7 @@ function addEventListeners() { //Everything that requires waiting for user input
             }(i, j));
         }
     }
-}
+}    
 
 function postInit() { //PostInit Phase
     updateDOM();

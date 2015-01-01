@@ -2683,7 +2683,7 @@ chdata =
             "name": "Dread Knight",
             "assetId": 164,
             "attackFormula": "heroAttackFormula1",
-            "baseCost": 5.000e+39,
+            "baseCost": 5.000+39,
             "id": 27,
             "clickDamageFormula": "heroClickDamageFormula1",
             "description": "Abandoned and forgotten, his heart has been tainted black with hatred and vengeance. He wields the power of a black ring which draws its magic from the darkness of his soul.",
@@ -7057,17 +7057,17 @@ chdata =
             "displayOrder": 127,
             "upgradeFunction": "upgradeClickDpsPercent",
             "name": "Lost Soul",
-            "upgradeParams": "25",
+            "upgradeParams": "0.5",
             "amount": 100,
-            "description": "Shhhh... don't tell him he's part of your group a man with nothing to lose is most dangerous and that's how he should stay.",
-            "attribute": 1,
-            "cost": 1.000e+41,
-            "id": 128,
-            "upgradeRequired": 0,
+            "description": "Frostleaf enchants everyone's weapons with icy energy that decreases enemy armor tremendously.",
+            "attribute": 4,
+            "cost": 1.68e+30,
+            "id": 127,
+            "upgradeRequired": 126,
             "iconId": 49,
-            "heroId": 27,
-            "isPercentage": 1,
-            "heroLevelRequired": 10
+            "heroId": 26,
+            "isPercentage": 0,
+            "heroLevelRequired": 75
         }
     }
 };

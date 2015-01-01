@@ -160,6 +160,11 @@ p {
     width: 25%;
 }
 
+#heroTable td p{
+    margin: 0;
+    padding: 0;
+}
+
 #ancientTable table {
     border-collapse: collapse;
     border-style: hidden;
